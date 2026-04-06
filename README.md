@@ -50,4 +50,5 @@ Step 3: Start Auto Processing
 ●	Click the green "🚀 Start Auto Processing" button.
 
 ●	The system will automatically wake up Docker, download the GPU engine if needed (approx. 4GB on the first run only), and begin processing.
+
 ●	When you see the popup saying "✅ Processing and cleanup successful!", open your output folder to find your final odm_orthophoto.tif and odm_dem.tif files! Drag them into QGIS to view your results.
