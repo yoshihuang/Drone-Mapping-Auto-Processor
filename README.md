@@ -31,14 +31,23 @@ Step 2: Install Docker Desktop
 
 #Operation Guide: 3 Steps to Auto-Processing
 Double-click run_uav_pro.py to launch the tool. It will automatically display in English if your system is non-Chinese.
+
 Step 1: Set Folders
+
 ●	Source Photos Folder: Click "Browse..." and select the folder containing your raw drone images (.JPG or .TIF). Note: The system mounts this as Read-Only to protect your original files.
+
 ●	Output Folder: The system will auto-fill this based on your source folder.
 Step 2: Choose Processing Mode
+
 ●	⚡ Fast Orthophoto: Extremely fast. Skips dense 3D point clouds and stitches a 2D map directly. Perfect for crop inspections.
+
 ●	🏗️ High Precision: Generates highly detailed Digital Surface Models (DSM) and 3D terrain. Heavy on memory. Recommended for under 300 photos.
+
 ●	🗺️ Huge Dataset: Designed for massive projects (500+ photos). Automatically splits the map into blocks to prevent out-of-memory (OOM) crashes, then merges them flawlessly.
+
 Step 3: Start Auto Processing
+
 ●	Click the green "🚀 Start Auto Processing" button.
+
 ●	The system will automatically wake up Docker, download the GPU engine if needed (approx. 4GB on the first run only), and begin processing.
 ●	When you see the popup saying "✅ Processing and cleanup successful!", open your output folder to find your final odm_orthophoto.tif and odm_dem.tif files! Drag them into QGIS to view your results.
