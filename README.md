@@ -8,13 +8,13 @@ This tool is a "One-Click Photogrammetry Solution" designed specifically for Unm
 ●	Smart i18n: Automatically detects your Windows OS language and switches between English and Chinese.
 ●	Dynamic GPU Acceleration: Automatically detects your NVIDIA GPU and seamlessly switches to the dedicated CUDA engine for massive speed boosts.
 ●	Auto-Cleanup Magic: Automatically deletes tens of gigabytes of temporary transition files once the task is complete, leaving you with only the pure final maps.
-________________________________________2. System & Hardware Requirements
+2. System & Hardware Requirements
 ●	OS: Windows 10 or Windows 11 (64-bit).
 ●	RAM: Minimum 16GB. If processing over 500 images, you MUST select the "Huge Dataset" mode. 32GB+ is highly recommended for the best experience.
 ●	GPU: NVIDIA Dedicated Graphics Card is highly recommended.
 ○	⚠️ CRITICAL: Your NVIDIA Graphics Driver MUST be updated to the latest version (supporting CUDA 12.9 or higher); otherwise, the GPU engine will fail to start.
 ●	Storage: At least 50GB of free space on a fast SSD (NVMe preferred).
-________________________________________3. Essential First-Time Setup
+3. Essential First-Time Setup
 This application relies on two core environments. You only need to install them once:
 Step 1: Install Python
 1.	Visit the official website: https://www.python.org/downloads/
@@ -26,7 +26,7 @@ Step 2: Install Docker Desktop
 2.	Click "Download for Windows" and install (keep all default settings).
 3.	Restart your computer after the installation.
 4.	Open "Docker Desktop" from your Windows Start menu. Accept the terms on your first launch, and wait until the status indicator in the bottom left turns Green (Engine running).
-________________________________________4. Operation Guide: 3 Steps to Auto-Processing
+4. Operation Guide: 3 Steps to Auto-Processing
 Double-click run_uav_pro.py to launch the tool. It will automatically display in English if your system is non-Chinese.
 Step 1: Set Folders
 ●	Source Photos Folder: Click "Browse..." and select the folder containing your raw drone images (.JPG or .TIF). Note: The system mounts this as Read-Only to protect your original files.
