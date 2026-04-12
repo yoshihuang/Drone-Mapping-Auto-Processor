@@ -30,7 +30,7 @@ Step 2: Install Docker Desktop
 4.	Open "Docker Desktop" from your Windows Start menu. Accept the terms on your first launch, and wait until the status indicator in the bottom left turns Green (Engine running).
 
 #Operation Guide: 3 Steps to Auto-Processing
-Double-click run_uav_pro.py to launch the tool. It will automatically display in English if your system is non-Chinese.
+Double-click run_uav_pro.py or run_uav_map3.py (with map interface) to launch the tool. It will automatically display in English if your system is non-Chinese.
 
 Step 1: Set Folders
 
