@@ -50,3 +50,10 @@ Step 3: Start Auto Processing
 ○	A: This is an Out-Of-Memory (OOM) error. Please switch to the "🗺️ Huge Dataset" mode and try again.
 ●	Q4: How do I view the output .tif files?
 ○	A: These are professional geo-referenced image files. Please use free open-source GIS software like QGIS, or commercial tools like AutoCAD Civil 3D to view and measure them.
+
+6. Windows Installer & DTM output (v1.1)
+●	New `installer/` folder: build a one-click Windows installer (`UAV_Mapper_Setup.exe`) that packages the program as an .exe, enables WSL2, installs Docker Desktop and pre-downloads the ODM image. See `installer/README.md`.
+●	`installer/run_uav_GCP2EXE.py` is the version used for the installer. Compared with `run_uav_GCP1.py` it adds:
+○	DTM (bare-earth DEM) output via a new checkbox. Available in "High Precision" and "Huge Dataset" modes only (Fast mode skips the point cloud). Result: `odm_dem/dtm.tif`.
+○	subprocess fixes so Docker/GPU detection works when packaged as a windowed (no console) .exe.
+●	Output files: `odm_orthophoto/odm_orthophoto.tif` (orthophoto), `odm_dem/dsm.tif` (surface model, includes buildings/trees), `odm_dem/dtm.tif` (bare-earth terrain, optional).

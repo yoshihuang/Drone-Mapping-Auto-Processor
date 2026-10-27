@@ -1,0 +1,11 @@
+# PyInstaller / Inno Setup build output
+installer/build/
+installer/dist/
+installer/Output/
+installer/*.spec
+installer/__pycache__/
+installer/venv/
+__pycache__/
+*.pyc
+# 離線用 Docker 安裝檔體積大,請勿提交
+installer/setup/DockerDesktopInstaller.exe
